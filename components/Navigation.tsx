@@ -4,34 +4,45 @@ import { useState } from "react";
 
 const Navigation = () => {
   return (
-    <section className="absolute right-10 top-64 flex flex-col gap-6">
-        <NavigationButton title="Intro"/>
-        <NavigationButton title="About"/>
-        <NavigationButton title="What I Do"/>
-        <NavigationButton title="Skills"/>
-        <NavigationButton title="Experience"/>
-        <NavigationButton title="Portfolio"/>
-        <NavigationButton title="Contact"/>
-    </section>
+    <motion.section 
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        className="fixed right-10 top-64 flex flex-col gap-6 z-50"
+    >
+        <NavigationButton title="Intro" targetId="intro"/>
+        <NavigationButton title="About" targetId="about"/>
+        <NavigationButton title="What I Do" targetId="work"/>
+        <NavigationButton title="Skills" targetId="skills"/>
+        <NavigationButton title="Experience" targetId="experience"/>
+        <NavigationButton title="Portfolio" targetId="portfolio"/>
+        <NavigationButton title="Contact" targetId="contact"/>
+    </motion.section>
   )
 }
 
 export default Navigation
 
-const NavigationButton = ({title}: {title: string}) => {
+const NavigationButton = ({title, targetId}: {title: string, targetId: string}) => {
     const [hovered, setHovered] = useState(false);
+    const handleClick = () => {
+        const targetElement = document.getElementById(targetId);
+        if(targetElement){
+            targetElement.scrollIntoView({behavior: "smooth"})
+        }
+    }
     return(
         <div 
             className="relative flex justify-center items-center"
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
         > 
             <motion.button 
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}
                 whileHover={{
                     scale: 1.3, 
-                    background: "red", 
+                    background: "gray", 
                     transition: { duration: 0.1}
                 }}
+                onClick={handleClick}
                 className="h-3 w-3 bg-zinc-300 rounded-full cursor-pointer"
             >
             </motion.button>
