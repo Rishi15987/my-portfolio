@@ -1,6 +1,6 @@
 import { FaArrowRight } from "react-icons/fa"
 import { IoIosArrowDown } from "react-icons/io"
-
+import { motion } from "motion/react"
 const Intro = () => {
     const handleClick = () => {
         const aboutElement = document.getElementById("about");
@@ -19,13 +19,16 @@ const Intro = () => {
             <button className="border rounded-xl p-3 flex items-center gap-2 bg-white text-black">Go to Github <FaArrowRight/></button>
         </div>
         <div className="text-white absolute bottom-10 w-full flex justify-center">
-            <button 
+            <motion.button 
+                animate={{ y: [0, 10, 0] }}
+                transition={{ duration: 1, repeat: Infinity }}
+                whileHover={{ scale: 1.3 }}
+                whileTap={{ scale: 0.9 }}
                 onClick={handleClick}
                 className="flex flex-col justify-center items-center gap-2 cursor-pointer"
             >
-                <p>Learn more</p>
                 <IoIosArrowDown size={30}/>
-            </button>
+            </motion.button>
         </div>
     </section>
   )
