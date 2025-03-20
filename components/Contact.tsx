@@ -39,8 +39,8 @@ const Contact = () => {
         transition={{ duration: 0.5 }}
         className="text-center mb-12"
       >
-        <h2 className="text-5xl font-bold text-white mb-4">Get In Touch</h2>
-        <div className="w-24 h-1 bg-cyan-400 mx-auto mb-6"></div>
+        <h2 className="text-5xl font-bold text-white mb-4">Contact</h2>
+        <div className="w-24 h-1 bg-gray-200 mx-auto mb-6"></div>
         <p className="text-lg text-zinc-300 max-w-md mx-auto">
           Have a sweet project in mind or just want to say hi?
           <br />
@@ -117,9 +117,9 @@ const Contact = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             type="submit"
-            className="border rounded-xl p-3 flex items-center gap-2 bg-white text-black cursor-pointer py-3 px-8 focus:border-white hover:bg-cyan-400 hover:text-zinc-900 transition-colors duration-300"
+            className="border rounded-xl p-3 flex items-center gap-2 bg-white text-black cursor-pointer py-3 px-8 focus:border-white hover:bg-zinc-100 hover:text-zinc-900 transition-colors duration-300"
           >
-            SEND MESSAGE
+            Send Message
           </motion.button>
         </div>
       </motion.form>

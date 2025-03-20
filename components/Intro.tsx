@@ -19,20 +19,24 @@ const Intro = () => {
             </div>
             <div className="flex gap-4">
                 <Link href={'https://github.com/Rishi15987'} target="_blank" className="z-10">
-                    <button 
+                    <motion.button 
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.98 }}
                         className="border rounded-xl p-3 flex items-center gap-2 bg-white text-black cursor-pointer"
                     >
-                            Go to Github <FaArrowRight size={20}/>
+                            Go to Github <FaArrowRight size={10}/>
                     
-                    </button>
+                    </motion.button>
                 </Link>
-                <Link href={'https://github.com/Rishi15987'} target="_blank" className="z-10">
-                <button 
-                    className="border rounded-xl p-3 flex items-center gap-2 bg-white text-black cursor-pointer"
-                >
-                        Download CV <FaArrowRight size={20}/>
-                
-                </button>
+                <Link href={'https://drive.google.com/file/d/1o6uBMpLdRKWMTGKU0OPDKmyTvv4Q05fS/view'} target="_blank" className="z-10">
+                    <motion.button 
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.98 }}
+                        className="border rounded-xl p-3 flex items-center gap-2 bg-white text-black cursor-pointer"
+                    >
+                            Download CV <FaArrowRight size={10}/>
+                    
+                    </motion.button>
             </Link>
             </div>
         </div>
