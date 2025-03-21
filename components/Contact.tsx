@@ -1,6 +1,5 @@
 import { motion } from "motion/react"
 import { ChangeEvent, FormEvent, useState } from "react";
-import Footer from "./Footer";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',

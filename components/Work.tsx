@@ -1,6 +1,4 @@
-import Image from "next/image";
-import workImage from "@/public/work.jpg";
-
+import { motion } from "motion/react";
 const workItems = [
   {
     title: "Backend Engineering",
@@ -101,9 +99,20 @@ const Work = () => {
   return (
     <div className="py-10 lg:h-screen flex items-center bg-zinc-900 text-white">
       <div className="px-8 md:px-32 flex flex-col gap-10">
-        <h1 className="text-4xl md:text-6xl text-white font-semibold">Work</h1>
-        <div className="w-24 bg-[#28D08A] h-1"></div>
-        <div className="hidden p-4 lg:grid grid-cols-3">
+        <motion.div
+          initial={{ opacity: 0, y: 20}}
+          whileInView={{ opacity: 1, y: 0}}
+          transition={{ duration: 0.5}}
+          className="flex flex-col"
+        >
+          <h1 className="text-4xl md:text-6xl text-white font-semibold mb-4">Work</h1>
+          <div className="w-24 bg-[#28D08A] h-1"></div>
+        </motion.div>
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 , delay: 0.2}}
+          className="hidden p-4 lg:grid grid-cols-3">
           {workItems.map((item, index) => (
             <WorkItemLg
               key={index}
@@ -112,7 +121,7 @@ const Work = () => {
               index={index}
             />
           ))}
-        </div>
+        </motion.div>
         <div className="p-4 hidden md:grid lg:hidden grid-cols-2">
           {workItems.map((item, index) => (
             <WorkItemMd
