@@ -45,7 +45,7 @@ const WorkItem = ({
 }) => {
   return (
     <div
-      className={`p-6`}>
+      className="py-6 md:p-6">
       <h1 className="text-xl font-semibold  text-[#38cf90]">{title}</h1>
       <p className="pt-4">{description}</p>
     </div>

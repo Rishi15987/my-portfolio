@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 const Experience = () => {
   return (
     <div className="md:h-[200vh] flex flex-col items-center bg-zinc-900 text-white">
-      <div className="px-12 md:px-32 flex flex-col items-center gap-10 w-full text-center">
+      <div className="pl-12 pr-8 md:px-32 flex flex-col items-center gap-10 w-full text-center">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -14,7 +14,7 @@ const Experience = () => {
           <div className="w-24 bg-[#28D08A] h-1"></div>
         </motion.div>
 
-        <div className="relative grid lg:grid-cols-2 gap-20 lg:gap-30 p-14 mt-20">
+        <div className="relative grid lg:grid-cols-2 gap-20 lg:gap-30 pl-14 md:p-14 mt-20">
           <div className="absolute w-0.5 h-full bg-[#28D08A] top-0 lg:left-1/2 "></div>
           <div className="group relative flex flex-col gap-1 rounded-sm p-4 bg-zinc-800 text-white text-left transition-all duration-300 hover:shadow-lg hover:shadow-zinc-800/20 border border-zinc-900">
               <motion.div 
