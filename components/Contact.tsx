@@ -1,5 +1,6 @@
 import { motion } from "motion/react"
 import { ChangeEvent, FormEvent, useState } from "react";
+import Footer from "./Footer";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -31,7 +32,7 @@ const Contact = () => {
   };
   return (
     <div className="h-screen flex items-center bg-zinc-900 text-white">
-    <div className="px-32 flex flex-col gap-10 w-full">
+    <div className="px-32 flex flex-col w-full">
       <div className="p-4 w-full flex flex-col justify-center items-center">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}

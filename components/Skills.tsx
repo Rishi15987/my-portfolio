@@ -19,8 +19,8 @@ const Skills = () => {
     <div className="px-32 flex flex-col gap-10 w-full">
       <h1 className="text-6xl text-white font-semibold">Skills</h1>
       <div className="w-24 bg-[#28D08A] h-1"></div>
-      <div className="p-4 flex gap-6 w-full">
-        <div className="flex flex-col gap-10 w-1/3">
+      <div className="p-4 flex flex-col lg:flex-row gap-6 w-full">
+        <div className="flex justify-between lg:flex-col lg:w-1/3">
           <div>
             <h1 className="text-3xl font-semibold tracking-wide text-[#28D08A]">Languages</h1>
             <div className="flex gap-10 mt-8">
@@ -39,8 +39,8 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-2/3 gap-10">
-          <div className="flex justify-evenly">
+        <div className="flex flex-col lg:w-2/3 gap-10">
+          <div className="flex justify-between">
             <div >
               <h1 className="text-3xl font-semibold tracking-wide text-[#28D08A]">Developer Tools</h1>
               <div className="flex gap-10 mt-10">
@@ -60,7 +60,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-evenly">
+          <div className="flex justify-between">
             <div >
               <h1 className="text-3xl font-semibold tracking-wide text-[#28D08A]">Developer Tools</h1>
               <div className="flex gap-10 mt-10">

@@ -57,15 +57,48 @@ const WorkItem = ({
   );
 };
 
+const WorkItemMd = ({
+  title,
+  description,
+  index,
+}: {
+  title: string;
+  description: string;
+  index: number;
+}) => {
+  const needsRightBorder = index % 2 !== 1; // Not in the rightmost column
+  const needsBottomBorder = index < 4; // Not in the bottom row
+  return (
+    <div
+      className={`p-6 ${
+        needsRightBorder ? "border-r" : ""
+      } ${needsBottomBorder ? "border-b" : ""} border-zinc-700`}
+    >
+      <h1 className="text-xl font-semibold  text-[#38cf90]">{title}</h1>
+      <p className="pt-4">{description}</p>
+    </div>
+  );
+};
+
 const Work = () => {
   return (
-    <div className="h-screen flex items-center bg-zinc-900 text-white">
+    <div className="py-10 lg:h-screen flex items-center bg-zinc-900 text-white">
       <div className="px-32 flex flex-col gap-10">
         <h1 className="text-6xl text-white font-semibold">Work</h1>
         <div className="w-24 bg-[#28D08A] h-1"></div>
-        <div className="p-4 grid grid-cols-3">
+        <div className="hidden p-4 lg:grid grid-cols-3">
           {workItems.map((item, index) => (
             <WorkItem
+              key={index}
+              title={item.title}
+              description={item.description}
+              index={index}
+            />
+          ))}
+        </div>
+        <div className=" p-4 lg:hidden grid-cols-2 grid">
+          {workItems.map((item, index) => (
+            <WorkItemMd
               key={index}
               title={item.title}
               description={item.description}

@@ -2,6 +2,7 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 import Intro from "@/components/Intro";
 import Navigation from "@/components/Navigation";
 import Skills from "@/components/Skills";
@@ -49,6 +50,7 @@ export default function Home() {
       <div id="contact">
         <Contact/>
       </div>
+      <Footer/>
     </div>
   );
 }
