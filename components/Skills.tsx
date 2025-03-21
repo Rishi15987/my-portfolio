@@ -16,7 +16,7 @@ import { FaPython } from "react-icons/fa";
 const Skills = () => {
   return (
     <div className="md:h-screen flex items-center bg-zinc-900 text-white">
-    <div className="px-12 md:px-32 flex flex-col gap-10 w-full">
+    <div className="px-8 md:px-32 flex flex-col gap-10 w-full">
       <h1 className="text-4xl md:text-6xl text-white font-semibold">Skills</h1>
       <div className="w-24 bg-[#28D08A] h-1"></div>
       <div className="p-4 flex flex-col lg:flex-row gap-6 w-full">

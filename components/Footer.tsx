@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className='flex flex-col gap-5 justify-center items-center h-20 bg-zinc-900 text-white px-32'>
+    <div className='flex flex-col gap-5 justify-center items-center h-20 bg-zinc-900 text-white px-8 md:px-32'>
         <div className='flex gap-6'>
             <FaXTwitter size={20}/>
             <FaLinkedin size={20}/>

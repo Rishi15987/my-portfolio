@@ -32,7 +32,7 @@ const Contact = () => {
   };
   return (
     <div className="h-screen flex items-center bg-zinc-900 text-white">
-    <div className="px-12 md:px-32 flex flex-col w-full">
+    <div className="px-8 md:px-32 flex flex-col w-full">
       <div className="p-4 w-full flex flex-col justify-center items-center">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
