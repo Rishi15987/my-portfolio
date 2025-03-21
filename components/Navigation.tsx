@@ -39,7 +39,7 @@ const Navigation = () => {
     >
         <NavigationButton title="Intro" targetId="intro" isActive={activeSection === "intro"}/>
         <NavigationButton title="About" targetId="about" isActive={activeSection === "about"}/>
-        <NavigationButton title="What I Do" targetId="work" isActive={activeSection === "work"}/>
+        <NavigationButton title="Work" targetId="work" isActive={activeSection === "work"}/>
         <NavigationButton title="Skills" targetId="skills" isActive={activeSection === "skills"}/>
         <NavigationButton title="Experience" targetId="experience" isActive={activeSection === "experience"}/>
         <NavigationButton title="Contact" targetId="contact" isActive={activeSection === "contact"}/>
