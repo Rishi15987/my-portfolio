@@ -3,7 +3,7 @@ import rishiImage from "@/public/rishi-image.jpg"
 const About = () => {
   return (
     <section className="lg:h-screen flex items-center bg-zinc-900">
-        <div className="flex flex-col lg:flex-row px-16 md:px-32">
+        <div className="flex flex-col lg:flex-row px-12 md:px-32">
             <div className="lg:w-2/3 flex flex-col gap-10">
                 <h1 className="text-4xl md:text-6xl text-white font-semibold">Hey, I'm Rishi.</h1>
                 <h3 className="text-md md:text-2xl text-white">

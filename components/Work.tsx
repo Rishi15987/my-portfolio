@@ -100,7 +100,7 @@ const WorkItemMd = ({
 const Work = () => {
   return (
     <div className="py-10 lg:h-screen flex items-center bg-zinc-900 text-white">
-      <div className="px-16 md:px-32 flex flex-col gap-10">
+      <div className="px-12 md:px-32 flex flex-col gap-10">
         <h1 className="text-4xl md:text-6xl text-white font-semibold">Work</h1>
         <div className="w-24 bg-[#28D08A] h-1"></div>
         <div className="hidden p-4 lg:grid grid-cols-3">

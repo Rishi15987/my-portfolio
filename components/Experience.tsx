@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 const Experience = () => {
   return (
     <div className="md:h-[200vh] flex flex-col items-center bg-zinc-900 text-white">
-      <div className="px-16 md:px-32 flex flex-col items-center gap-10 w-full text-center">
+      <div className="px-12 md:px-32 flex flex-col items-center gap-10 w-full text-center">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
