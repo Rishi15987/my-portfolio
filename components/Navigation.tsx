@@ -8,7 +8,7 @@ const Navigation = () => {
     // Add scroll event listener to update active section based on scroll position
     useEffect(() => {
       const handleScroll = () => {
-        const sections = ["intro", "about", "work", "skills", "experience", "portfolio", "contact"];
+        const sections = ["intro", "about", "work", "skills", "experience", "contact"];
         
         // Find the section currently in view
         for (const section of sections) {
@@ -42,7 +42,6 @@ const Navigation = () => {
         <NavigationButton title="What I Do" targetId="work" isActive={activeSection === "work"}/>
         <NavigationButton title="Skills" targetId="skills" isActive={activeSection === "skills"}/>
         <NavigationButton title="Experience" targetId="experience" isActive={activeSection === "experience"}/>
-        <NavigationButton title="Portfolio" targetId="portfolio" isActive={activeSection === "portfolio"}/>
         <NavigationButton title="Contact" targetId="contact" isActive={activeSection === "contact"}/>
     </motion.section>
   )
@@ -65,7 +64,7 @@ const NavigationButton = ({title, targetId, isActive}: {title: string, targetId:
             <motion.button 
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
-                animate={{ backgroundColor: isActive ? "white" : "gray",
+                animate={{ backgroundColor: isActive ? "#28D08A" : "gray",
                     transition: { duration: 0.3 },
                     opacity: isActive ? 1 : 0.5
                 }}

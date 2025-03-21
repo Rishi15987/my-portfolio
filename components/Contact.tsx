@@ -30,7 +30,7 @@ const Contact = () => {
     setFormData({ name: '', email: '', subject: '', message: '' });
   };
   return (
-    <div className="h-screen flex items-center bg-slate-950 text-white">
+    <div className="h-screen flex items-center bg-zinc-900 text-white">
     <div className="px-32 flex flex-col gap-10 w-full">
       <div className="p-4 w-full flex flex-col justify-center items-center">
       <motion.div 
@@ -39,11 +39,9 @@ const Contact = () => {
         transition={{ duration: 0.5 }}
         className="text-center mb-12"
       >
-        <h2 className="text-5xl font-bold text-white mb-4">Contact</h2>
-        <div className="w-24 h-1 bg-gray-200 mx-auto mb-6"></div>
+        <h2 className="text-5xl font-bold text-white mb-4 tracking-wide">Contact</h2>
+        <div className="w-24 h-1 bg-[#28D08A] mx-auto mb-4"></div>
         <p className="text-lg text-zinc-300 max-w-md mx-auto">
-          Have a sweet project in mind or just want to say hi?
-          <br />
           Feel free to send me a message!
         </p>
       </motion.div>
@@ -65,8 +63,8 @@ const Contact = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            placeholder="NAME"
-            className="w-full bg-transparent border-b border-zinc-500 py-3 px-1 text-white focus:border-white focus:outline-none transition-colors duration-300"
+            placeholder="Name"
+            className="w-full bg-transparent border-b border-zinc-500 py-2 px-1 text-white focus:border-[#28D08A] focus:outline-none transition-colors duration-300"
           />
         </div>
         
@@ -79,8 +77,8 @@ const Contact = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            placeholder="EMAIL"
-            className="w-full bg-transparent border-b border-zinc-500 py-3 px-1 text-white focus:border-white focus:outline-none transition-colors duration-300"
+            placeholder="Email"
+            className="w-full bg-transparent border-b border-zinc-500 py-2 px-1 text-white focus:border-[#28D08A] focus:outline-none transition-colors duration-300"
           />
         </div>
         
@@ -93,8 +91,8 @@ const Contact = () => {
             value={formData.subject}
             onChange={handleChange}
             required
-            placeholder="SUBJECT"
-            className="w-full bg-transparent border-b border-zinc-500 py-3 px-1 text-white focus:border-white focus:outline-none transition-colors duration-300"
+            placeholder="Subject"
+            className="w-full bg-transparent border-b border-zinc-500 py-2 px-1 text-white focus:border-[#28D08A] focus:outline-none transition-colors duration-300"
           />
         </div>
         
@@ -106,18 +104,18 @@ const Contact = () => {
             value={formData.message}
             onChange={handleChange}
             required
-            placeholder="MESSAGE"
+            placeholder="Message"
             rows={4}
-            className="w-full bg-transparent border-b border-zinc-500 py-3 px-1 text-white focus:border-white focus:outline-none transition-colors duration-300 resize-none"
+            className="w-full bg-transparent border-b border-zinc-500 py-2 px-1 text-white focus:border-[#28D08A] focus:outline-none transition-colors duration-300 resize-none"
           />
         </div>
         
-        <div className="mt-4 flex justify-center">
+        <div className="mt-2 flex justify-center">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             type="submit"
-            className="border rounded-xl p-3 flex items-center gap-2 bg-white text-black cursor-pointer py-3 px-8 focus:border-white hover:bg-zinc-100 hover:text-zinc-900 transition-colors duration-300"
+            className="rounded-xl p-3 flex items-center gap-2 bg-[#28D08A] text-white cursor-pointer py-3 px-8 hover:bg-zinc-800 hover:text-zinc-100 transition-colors duration-300"
           >
             Send Message
           </motion.button>

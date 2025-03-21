@@ -4,10 +4,8 @@ import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
 import Intro from "@/components/Intro";
 import Navigation from "@/components/Navigation";
-import Portfolio from "@/components/Portfolio";
 import Skills from "@/components/Skills";
 import Work from "@/components/Work";
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
@@ -47,9 +45,6 @@ export default function Home() {
       </div>
       <div id="experience">
         <Experience/>
-      </div>
-      <div id="portfolio">
-        <Portfolio/>
       </div>
       <div id="contact">
         <Contact/>
