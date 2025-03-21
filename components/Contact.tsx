@@ -32,7 +32,7 @@ const Contact = () => {
   };
   return (
     <div className="h-screen flex items-center bg-zinc-900 text-white">
-    <div className="px-32 flex flex-col w-full">
+    <div className="px-16 md:px-32 flex flex-col w-full">
       <div className="p-4 w-full flex flex-col justify-center items-center">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
@@ -40,7 +40,7 @@ const Contact = () => {
         transition={{ duration: 0.5 }}
         className="text-center mb-12"
       >
-        <h2 className="text-5xl font-bold text-white mb-4 tracking-wide">Contact</h2>
+        <h2 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-wide">Contact</h2>
         <div className="w-24 h-1 bg-[#28D08A] mx-auto mb-4"></div>
         <p className="text-lg text-zinc-300 max-w-md mx-auto">
           Feel free to send me a message!

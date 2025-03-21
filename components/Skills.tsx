@@ -15,12 +15,12 @@ import { FaDocker } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 const Skills = () => {
   return (
-    <div className="h-screen flex items-center bg-zinc-900 text-white">
-    <div className="px-32 flex flex-col gap-10 w-full">
-      <h1 className="text-6xl text-white font-semibold">Skills</h1>
+    <div className="md:h-screen flex items-center bg-zinc-900 text-white">
+    <div className="px-16 md:px-32 flex flex-col gap-10 w-full">
+      <h1 className="text-4xl md:text-6xl text-white font-semibold">Skills</h1>
       <div className="w-24 bg-[#28D08A] h-1"></div>
       <div className="p-4 flex flex-col lg:flex-row gap-6 w-full">
-        <div className="flex justify-between lg:flex-col lg:w-1/3">
+        <div className="flex flex-col md:flex-row justify-between lg:flex-col lg:w-1/3">
           <div>
             <h1 className="text-3xl font-semibold tracking-wide text-[#28D08A]">Languages</h1>
             <div className="flex gap-10 mt-8">
@@ -40,7 +40,7 @@ const Skills = () => {
           </div>
         </div>
         <div className="flex flex-col lg:w-2/3 gap-10">
-          <div className="flex justify-between">
+          <div className="flex flex-col md:flex-row justify-between">
             <div >
               <h1 className="text-3xl font-semibold tracking-wide text-[#28D08A]">Developer Tools</h1>
               <div className="flex gap-10 mt-10">
@@ -60,7 +60,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-between">
+          <div className="flex flex-col md:flex-row justify-between">
             <div >
               <h1 className="text-3xl font-semibold tracking-wide text-[#28D08A]">Developer Tools</h1>
               <div className="flex gap-10 mt-10">

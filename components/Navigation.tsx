@@ -35,7 +35,7 @@ const Navigation = () => {
     <motion.section 
         initial={{opacity: 0}}
         animate={{opacity: 1}}
-        className="fixed right-10 top-64 flex flex-col gap-6 z-50"
+        className="hidden fixed right-10 top-64 md:flex flex-col gap-6 z-50"
     >
         <NavigationButton title="Intro" targetId="intro" isActive={activeSection === "intro"}/>
         <NavigationButton title="About" targetId="about" isActive={activeSection === "about"}/>
