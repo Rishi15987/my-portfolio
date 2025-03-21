@@ -10,7 +10,7 @@ const About = () => {
                 I'm a detail-oriented Java backend developer passionate about building scalable, high-performance applications.</h3>
                 <div className="w-24 bg-[#28D08A] h-1"></div>
                 <div className="w-full flex justify-center">
-                  <div className="lg:hidden relative flex justify-center w-96 aspect-square overflow-hidden rounded-full border-1 border-[#28D08A]">
+                  <div className="lg:hidden relative flex justify-center w-64 md:w-96 aspect-square overflow-hidden rounded-full border-1 border-[#28D08A]">
                     <Image
                       src={rishiImage}
                       fill
