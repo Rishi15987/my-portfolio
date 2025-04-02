@@ -97,7 +97,7 @@ const WorkItemMd = ({
 
 const Work = () => {
   return (
-    <div className="py-10 lg:h-screen flex items-center bg-zinc-900 text-white">
+    <div className="py-10 lg:h-screen flex items-center bg-[url('/work.jpg')] bg-cover bg-center text-white">
       <div className="px-8 md:px-32 flex flex-col gap-10">
         <motion.div
           initial={{ opacity: 0, y: 20}}
