@@ -54,7 +54,7 @@ const Experience = () => {
                 className="group-hover:text-white transition-colors duration-300"
               />
             </div>
-            <h1 className="text-xl font-semibold uppercase">Senior System Engineer</h1>
+            <h1 className="text-xl font-semibold uppercase">Senior Systems Engineer</h1>
             <p className="text-lg font-semibold text-[#28D08A]">
               Infosys - Bangalore, India
             </p>
