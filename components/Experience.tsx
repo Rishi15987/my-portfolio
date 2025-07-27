@@ -115,7 +115,7 @@ const Experience = () => {
             <p className="text-lg font-semibold text-[#28D08A]">
               Infosys - Bangalore, India
             </p>
-            <p className="text-md mb-1">RiteAid Client – Backend System Development</p>
+            <p className="text-md mb-1"> Backend System Development </p>
             <p className="text-md">
               Designed and implemented backend solutions for the FIV-RiteAid
               project, handling 100,000+ records daily. Delivered 30+ change
