@@ -54,21 +54,15 @@ const Experience = () => {
                 className="group-hover:text-white transition-colors duration-300"
               />
             </div>
-            <h1 className="text-xl font-semibold uppercase">System Engineer</h1>
+            <h1 className="text-xl font-semibold uppercase">Senior System Engineer</h1>
             <p className="text-lg font-semibold text-[#28D08A]">
               Infosys - Bangalore, India
             </p>
             <p className="text-md">
-              RiteAid Client – Backend System Development
+              Data Migration from MuleSoft to AWS
             </p>
             <p className="text-sm">
-              Designed and implemented backend solutions for the FIV-RiteAid
-              project, handling 100,000+ records daily. Delivered 30+ change
-              requests with a 95% defect-free rate, significantly optimizing
-              system efficiency. Refactored backend queries, reducing data
-              loading time from 60 seconds to 2 seconds, improving performance
-              and user experience. Managed 20+ high-severity production
-              incidents, ensuring seamless operations.
+              Led a data migration project from MuleSoft to AWS using Python, FastAPI, Lambda, and ECS, improving system reliability, deployment efficiency, and data accessibility by over 30%.
             </p>
           </motion.div>
           <motion.div
@@ -121,15 +115,12 @@ const Experience = () => {
             <p className="text-lg font-semibold text-[#28D08A]">
               Infosys - Bangalore, India
             </p>
-            <p>RiteAid Client – Backend System Development</p>
-            <p>
+            <p className="text-md mb-1">RiteAid Client – Backend System Development</p>
+            <p className="text-md">
               Designed and implemented backend solutions for the FIV-RiteAid
               project, handling 100,000+ records daily. Delivered 30+ change
               requests with a 95% defect-free rate, significantly optimizing
-              system efficiency. Refactored backend queries, reducing data
-              loading time from 60 seconds to 2 seconds, improving performance
-              and user experience. Managed 20+ high-severity production
-              incidents, ensuring seamless operations.
+              system efficiency. 
             </p>
           </motion.div>
           <motion.div
