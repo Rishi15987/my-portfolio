@@ -61,7 +61,7 @@ const Experience = () => {
             <p className="text-md">
               Data Migration (Python) & Enterprise Backend Development (Java / Spring Boot)
             </p>
-            <p className="text-sm">
+            <p className="text-md">
               Designed and developed cloud-native backend services across subsequent projects, including API redevelopment during a MuleSoft-to-AWS migration using FastAPI, and Spring Boot REST APIs for an internal contact management system. Ensured secure deployments, code quality, and reliable releases using CI/CD pipelines.
             </p>
           </motion.div>
