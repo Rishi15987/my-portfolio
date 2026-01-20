@@ -59,10 +59,10 @@ const Experience = () => {
               Infosys - Bangalore, India
             </p>
             <p className="text-md">
-              Data Migration from MuleSoft to AWS
+              Data Migration (Python) & Enterprise Backend Development (Java / Spring Boot)
             </p>
             <p className="text-sm">
-              Led a data migration project from MuleSoft to AWS using Python, FastAPI, Lambda, and ECS, improving system reliability, deployment efficiency, and data accessibility by over 30%.
+              Designed and developed cloud-native backend services across subsequent projects, including API redevelopment during a MuleSoft-to-AWS migration using FastAPI, and Spring Boot REST APIs for an internal contact management system. Ensured secure deployments, code quality, and reliable releases using CI/CD pipelines.
             </p>
           </motion.div>
           <motion.div
@@ -115,12 +115,9 @@ const Experience = () => {
             <p className="text-lg font-semibold text-[#28D08A]">
               Infosys - Bangalore, India
             </p>
-            <p className="text-md mb-1"> Backend System Development </p>
+            <p className="text-md mb-1">Java & Spring Boot Backend Development</p>
             <p className="text-md">
-              Designed and implemented backend solutions for the FIV-RiteAid
-              project, handling 100,000+ records daily. Delivered 30+ change
-              requests with a 95% defect-free rate, significantly optimizing
-              system efficiency. 
+              Designed and developed Spring Boot–based backend services and REST APIs for a high-volume enterprise application processing over 100,000 records daily. Focused on performance optimization, scalability, and improving system reliability through query optimization and issue resolution.
             </p>
           </motion.div>
           <motion.div
