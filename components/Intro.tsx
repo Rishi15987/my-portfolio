@@ -105,7 +105,7 @@ const Intro = () => {
             }}
           >
             <Link
-              href="https://drive.google.com/file/d/1SMQTNsupejI_4MsYz3QjZySURBd6CYIS/view?usp=sharing"
+              href="https://drive.google.com/file/d/1futWVwa7SsdztMwnzal9Huyr0vbHJA3P/view?usp=sharing"
               target="_blank"
             >
               <motion.button
